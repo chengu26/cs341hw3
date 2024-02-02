@@ -1,0 +1,123 @@
+<!-- Author: Malissa Chen -->
+<!-- Date: Jan. 29, 2024 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/javascripts/script.js"></script>
+
+<!-- css code to make the scrollable menu-->
+<!-- used w3schools as reference for the css-->
+<!-- link: https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button -->
+<!-- I couldn't figure out how to only have the css code in the css file-->
+<!-- I spent 2+ hours trying to make it work but this is the only solution I found worked please don't dock points for this :( -->
+<style>
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .dropdown-options {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: white;
+    color: #FFB7CE;
+    min-width: 100px;
+    overflow-y: auto;
+    max-height: 150px;
+  }
+
+  .dropdown-option {
+    padding: 10px 150px;
+    display: block;
+  }
+
+  .dropdown-option:hover {
+    background-color: #D49DA5;
+    color: white;
+  }
+</style>
+
+<!DOCTYPE html>
+<html>
+
+<!-- link for the css file -->
+<link rel="stylesheet" href="/stylesheets/chengu26.css">
+
+<body>
+  <!-- main heading -->
+  <h1>Cheesecake Order Form!</h1>
+
+  <!-- sidebar with monthly orders info -->
+  <!-- needed help for the dropdown selection of months -->
+  <!-- link for reference: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select -->
+  <aside>
+    <div class="dropdown">
+      <span class="dropdown-header">Orders for Jan</span>
+      <div class="dropdown-options">
+        <div class="dropdown-option" data-month="Jan">Jan</div>
+        <div class="dropdown-option" data-month="Feb">Feb</div>
+        <div class="dropdown-option" data-month="Mar">Mar</div>
+        <div class="dropdown-option" data-month="Apr">Apr</div>
+        <div class="dropdown-option" data-month="May">May</div>
+        <div class="dropdown-option" data-month="Jun">Jun</div>
+        <div class="dropdown-option" data-month="Jul">Jul</div>
+        <div class="dropdown-option" data-month="Aug">Aug</div>
+        <div class="dropdown-option" data-month="Sep">Sep</div>
+        <div class="dropdown-option" data-month="Oct">Oct</div>
+        <div class="dropdown-option" data-month="Nov">Nov</div>
+        <div class="dropdown-option" data-month="Dec">Dec</div>
+      </div>
+    </div>
+    
+    <ul>
+      <li>11 Cherry</li>
+      <li>17 Chocolate</li>
+      <li>31 Plain</li>
+    </ul>
+  </aside>
+
+  <!-- image of the cheesecake from url -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg/2560px-Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" alt="wikimedia cheesecake" width="200" height="200">
+
+  <!-- quantity & topping title text -->
+  <p>Quantity Topping</p>
+
+  <table>
+    <tr>
+      <!-- quantity dropdown selection -->
+      <td>
+        <select name="quanity" id="quanity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3" selected>3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </td>
+
+      <!-- topping selection menu -->
+      <td>
+        <form action="/action_page.php">
+          <input type="radio" id="topping1" name="topping" value="Plain">
+          <label for="topping1">Plain</label><br>
+          <input type="radio" id="topping2" name="topping" value="Cherry">
+          <label for="topping2">Cherry</label><br>
+          <input type="radio" id="topping3" name="topping" value="Chocolate">
+          <label for="topping3">Chocolate</label><br><br>
+        </form>
+      </td>
+    </tr>
+  </table>
+
+  <!-- notes section -->
+  <label2 for="fname">Notes:</label2><br>
+  <form>
+    <textarea name="message" id="message" rows="5" cols="50" onfocus="this.value=''">Enter any special instructions here.</textarea>
+  </form>
+
+  <!-- order button -->
+  <input type="submit" value="Order">
+
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+/* 
+ * Author: Malissa Chen 
+ * Date: Jan. 19, 2024
+ */
+
+ /* styling for the monthly total order 
+  * placing it on the right*/
+  aside {
+    width: 40%;
+    height: 350px;
+    float: right;
+    font-style: italic;
+    background-color: #FFEFCB;
+  }
+  
+  /* styling for the header 2 (monthly total) */
+  h2 {
+    color: #D49DA5;
+    text-align: center;
+    font-size: 40px;
+    padding: 30px;
+  }
+  
+  /* styling for the total order of items*/
+  ul {
+    font-family: 'Courier New';
+    font-size: 25px;
+    color: #D49DA5;
+    padding-left: 100px;
+  }
+  
+  /* making the image into a circle */
+  img { 
+    border-radius: 50%;
+    margin-left: 250px;
+  }
+  
+  /* styling for the main header */
+  h1 {
+    background-color: #FFCCD4 ;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding: 30px;
+  }
+  
+  /* styling for the quanity & topping text */
+  p {
+    font-family: 'Courier New';
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFB7CE;
+    word-spacing: 100px;
+    padding-left: 100px;
+  }
+  
+  /* making the quanity selection bigger */
+  select {
+    height: 40px;
+    width: 40px;
+    font-size: 15px;
+  }
+  
+  /* added spacing between quanity & toppings selection */
+  table {
+  padding-inline-start: 150px;
+  }
+  
+  /* styling for the topping selection */
+  label {
+    color: #D49DA5;
+    font-family:'Courier New';
+    font-size: 25px;
+  }
+  
+  /* styling for the notes text */
+  label2{
+    padding-left: 120px;
+    color: #D49DA5;
+    font-family:'Courier New';
+    font-size: 25px;
+  }
+
+  /* styling for the monthly orders text */
+  span {
+    color: #D49DA5;
+    font-weight: bold;
+    font-size: 35px;
+    padding: 100px;
+  }
+  
+  aside {
+    padding-top: 40px;
+  }
+
+  /* adding padding for the text box */
+  form {
+    padding-left: 120px;
+  }
+  
+  /* styling for the order button */
+  input {
+    font-family: 'Courier New';
+    font-weight: bold;
+    background-color: #FFEFCB;
+    color: #D49DA5;
+    margin-inline-start: 120px;
+  }
+  
+   /* styling for the order summary */
+   p1{
+    font-family: 'Courier New';
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    padding-left: 50px;
+    padding-top: 50px;
+    text-align: center;
+    color: #FFB7CE;
+    white-space: pre-line;
+  }
